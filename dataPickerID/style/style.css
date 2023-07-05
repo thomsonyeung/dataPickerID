@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+/*
+ *
+ * Usage: PC page & Base layout
+ *
+ * Name: reset.css
+ *
+ * Date: 2011.03.25
+ *
+ */
+
+/*http://www.colorzilla.com/gradient-editor/*/ 
+/*http://www.cssbuttongenerator.com/*/
+ /*---------------------------------------------------------------------
+Style Reset
+---------------------------------------------------------------------*/
+/* -- html -- */
+
+.formCalendar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 1000px;	
+}	
+
+.formCalendar > input{
+	position: relative;
+	top: 0px;
+	left: 0px;	
+	height: 25px;
+	width: 255px;
+	border: 1px solid #000;
+	font-size: 1em;
+	line-height: 1;
+	text-align: center;
+}
+/* Calendar Container  */
+.formCalendar > div:nth-of-type(1) {
+	position: relative;
+	top: 3px;
+	left: 0px;
+	width: 255px;
+	height: auto;
+	padding-bottom: 3px;
+	/*border: 1px solid #000;*/
+	box-shadow: 3px 3px 10px #AFC7C7;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	overflow: hidden;
+	background: #f2f5f6; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+	background: linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}	
+
+/* Main Control Panel*/
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1) {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	
+	
+		-moz-border-radius:6px 6px 0 0;
+	-webkit-border-radius:6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+	
+	margin-bottom:3px;
+	background: rgb(222,239,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlZWZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OGJlZGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(222,239,255,1) 0%, rgba(152,190,222,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(222,239,255,1)), color-stop(100%,rgba(152,190,222,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-8 */
+
+}	
+
+
+/* Main Control Item*/
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div {
+
+	height: 30px;
+	width: 98%;
+	
+	
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   
+   	background: rgb(222,239,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlZWZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OGJlZGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(222,239,255,1) 0%, rgba(152,190,222,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(222,239,255,1)), color-stop(100%,rgba(152,190,222,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-8 */
+	
+}	
+
+/* Main Control -> Last Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(1) {
+	position: relative;
+	float: left;
+	width: 40px;
+	left: 5px;
+	font-size: 1em;
+	line-height: 2;
+	cursor: pointer;
+	margin-left:3px;
+	
+
+}	
+
+/* Main Control -> Current Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(2) {
+	position: relative;
+	float: left;
+	width: 168px;
+	
+	font-size: 1.5em;
+	line-height: 1.5;
+	text-align: center;
+}	
+
+/* Main Control -> Next Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(3) {
+	position: relative;
+	float: left;
+	width: 40px;
+	
+	font-size: 1em;
+	line-height: 2;
+	cursor: pointer;
+	margin-right:3px;
+}	
+
+/* Week Day Label Area */
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	margin-bottom:3px;
+	
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		
+}
+
+/* Week Day Label Sun-Sat*/
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) li {
+	position: relative;
+	float: left;
+	/*width: 95px;height: 90px;*/
+	width: 31px;
+	height: 28px;
+	margin-left:3px;
+
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: #000;
+	text-align: center;
+	text-shadow:2px 2px 4px #ffffff;
+	font-weight: bold;
+		
+	background: rgb(247,251,252); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjdmYmZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZDllZGYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FkZDllNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(40%,rgba(217,237,242,1)), color-stop(100%,rgba(173,217,228,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* IE10+ */
+	background: linear-gradient(-45deg,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	
+		-moz-border-radius:5px 0px 5px 0px;
+	-webkit-border-radius:5px 0px 5px 0px;
+	border-radius:5px 0px 5px 0px;
+	border:1px solid #dcdcdc;
+	
+	text-decoration:none;
+	text-shadow:1px 1px 4px #ffffff;
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) li:nth-of-type(7n) {
+	position: relative;
+	float: right;
+	right: 3px;
+}
+
+
+/* Day Area */
+/*.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) {*/
+.formCalendar ul#datePanel {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 255px;  /* for ie7 do not use width 100% for float children
+	height: auto;
+	background: #f2f5f6; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+	background: linear-gradient(-45deg,  #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	border-radius:0 0 10px 10px;
+	
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+}
+
+/* Date Panel */
+.formCalendar ul#datePanel li {
+	position: relative;
+	float: left;
+	
+	/*width: 95px;*/
+	width: 31px;
+	height: 32px;
+	margin-left:3px;
+	margin-bottom:2px;
+	
+	/*background: #EFFFFF;*/
+	
+	-moz-box-shadow:inset 0px 1px 4px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 4px 0px #ffffff;
+	box-shadow:inset 0px 1px 4px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:0 10px 0 10px;
+	-webkit-border-radius:0 10px 0 10px;
+	border-radius:0 10px 0 10px;
+	border:1px solid #dcdcdc;
+	
+	
+	text-decoration:none;
+	text-shadow:1px 1px 4px #ffffff;
+}
+
+.formCalendar ul#datePanel li:nth-of-type(7n) {
+	position: relative;
+	float: right;
+	right: 3px;
+}
+
+.formCalendar ul#datePanel li:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	
+		
+	-moz-box-shadow: 	0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+    -webkit-box-shadow: 0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+    box-shadow:         0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+	
+	
+	
+}
+
+.formCalendar ul#datePanel li:active {
+	position: relative;
+	top: 1px;
+	left:1px;
+}
+
+
+.formCalendar ul#datePanel li a{
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;	
+	height: 100%;
+	font-size: 1em;
+}
+
+.formCalendar ul#datePanel li:nth-of-type(7n+1) a{
+	color: red;
+}
+
+
+.formCalendar ul#datePanel li:empty {
+	visibility: hidden;
+	
+}
+
+
+
+

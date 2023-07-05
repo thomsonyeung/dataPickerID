@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*
+ *
+ * Usage: PC page & Base layout
+ *
+ * Name: reset.css
+ *
+ * Date: 2011.03.25
+ *
+ */
+
+ 
+ /*---------------------------------------------------------------------
+Style Reset
+---------------------------------------------------------------------*/
+/* -- html -- */
+* {margin:0;padding:0;} 
+html {overflow-y:scroll;}
+
+/* -- body -- */
+body {font-size:63%; line-height:1.5em; margin:0; padding:0;}
+* html body {font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:63%;}/* for IE6 */
+*+html body {font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:63%;}/* for IE7 */
+html>/**/body {font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:63%;}/* for IE8 */
+html:not(:target) body {font-size:63%; line-height:1.5em; font-family:"Helvetica Neue",Verdana,Helvetica,Arial,sans-serif;}
+
+/* -- other tags -- */
+a {overflow:hidden; text-decoration:none; color:#000;}
+a:hover  {text-decoration:underline;}
+a img, img {border:0;}
+img {line-height:100%;}
+abbr, acronym {border:0;}
+address, caption, cite, code, dfn, em, th, var {font-style:normal; font-weight:normal;}
+caption, th {text-align:left;}
+code, kbd, pre, samp, tt {font-family:monospace; line-height:100%;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+ol, ul {list-style:none;}
+q:before, q:after {content:'';}
+button, fieldset, form, input, label, legend, select, textarea {font-family:inherit; font-style:inherit; font-weight:inherit; margin:0; padding:0; vertical-align:baseline;}
+fieldset {border:none;}
+table {border-collapse:collapse; border-spacing:0;}/* tables still need 'cellspacing="0"' */
+object {outline:none;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+
+ 
+/* clearfix */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+* html .clearfix {display:inline-block;}/* for IE6 */
+*+html .clearfix {display:inline-block;}/* for IE7 */
+
+        /* Start of "Micro clearfix" */
+        
+        .cf { zoom: 1; }
+        .cf:before,
+        .cf:after { content: ""; display: table; }
+        .cf:after { clear: both; }
+		
+		 /* End of "Micro clearfix" */
+ 
+/* FONT size
+---------------------------------------------------------------------
+[ px ]	[ % ]
+10px 	83  %		19px 	158 %
+11px 	92  %		20px 	167 %
+12px 	100 %		21px 	175 %
+13px 	108 %		22px 	183 %
+14px 	117 %		23px 	192 %
+15px 	125 %		24px 	200 %
+16px 	133 %		25px 	208 %
+17px 	142 %		26px 	217 %
+18px 	150 %
+---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------
+Page layout
+---------------------------------------------------------------------*/
+html, body  {height:100%; background:#fff;}

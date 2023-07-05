@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/*
+ *
+ * Usage: PC page & Base layout
+ *
+ * Name: reset.css
+ *
+ * Date: 2011.03.25
+ *
+ */
+
+/*http://www.colorzilla.com/gradient-editor/*/ 
+/*http://www.cssbuttongenerator.com/*/
+ /*---------------------------------------------------------------------
+Style Reset
+---------------------------------------------------------------------*/
+/* -- html -- */
+
+.formCalendar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1000px;
+	height: 1000px;	
+}	
+
+.formCalendar > input{
+	position: relative;
+	top: 0px;
+	left: 0px;	
+	height: 25px;
+	width: 255px;
+	border: 1px solid #000;
+	font-size: 1em;
+	line-height: 1;
+	text-align: center;
+}
+/* Calendar Container  */
+.formCalendar > div:nth-of-type(1) {
+	position: relative;
+	top: 3px;
+	left: 0px;
+	width: 255px;
+	height: auto;
+	padding-bottom: 3px;
+	/*border: 1px solid #000;*/
+	box-shadow: 3px 3px 10px #AFC7C7;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius:6px 6px 6px 6px;
+	border-radius:6px 6px 6px 6px;
+	overflow: hidden;
+	background: #f2f5f6; /* Old browsers */
+	
+}	
+
+/* Main Control Panel*/
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1) {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	
+	
+		-moz-border-radius:6px 6px 0 0;
+	-webkit-border-radius:6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+	
+	margin-bottom:3px;
+	background: rgb(222,239,255); /* Old browsers */
+	
+}	
+
+
+/* Main Control Item*/
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div {
+	position: relative;
+	float: left;
+	height: 30px;
+	width: 98%;
+	
+	
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   
+   	background: rgb(222,239,255); /* Old browsers */
+	
+}	
+
+/* Main Control -> Last Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(1) {
+	width: 40px;
+	left: 5px;
+	font-size: 1em;
+	line-height: 2;
+	cursor: pointer;
+	margin-left:3px;
+	
+
+}	
+
+/* Main Control -> Current Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(2) {
+	width: 168px;
+	
+	font-size: 1.5em;
+	line-height: 1.5;
+	text-align: center;
+}	
+
+/* Main Control -> Next Month */
+.formCalendar > div:nth-of-type(1) > div:nth-of-type(1)> div:nth-of-type(3) {
+	width: 40px;
+	
+	font-size: 1em;
+	line-height: 2;
+	cursor: pointer;
+	margin-right:3px;
+}	
+
+/* Week Day Label Area */
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	margin-bottom:3px;
+	
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		
+}
+
+/* Week Day Label Sun-Sat*/
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) li {
+	position: relative;
+	float: left;
+	/*width: 95px;height: 90px;*/
+	width: 31px;
+	height: 28px;
+	margin-left:3px;
+
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: #000;
+	text-align: center;
+	text-shadow:2px 2px 4px #ffffff;
+	font-weight: bold;
+		
+	background: rgb(247,251,252); /* Old browsers */
+	
+		-moz-border-radius:5px 0px 5px 0px;
+	-webkit-border-radius:5px 0px 5px 0px;
+	border-radius:5px 0px 5px 0px;
+	border:1px solid #dcdcdc;
+	
+	text-decoration:none;
+	text-shadow:1px 1px 4px #ffffff;
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(1) li:nth-of-type(7n) {
+	position: relative;
+	float: right;
+	right: 3px;
+}
+
+
+/* Day Area */
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*height: 500px;*/
+	height: auto;
+	background: #f2f5f6; /* Old browsers */
+	
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	border-radius:0 0 10px 10px;
+	
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+}
+
+/* Day Label */
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li {
+	position: relative;
+	float: left;
+	/*width: 95px;*/
+	width: 31px;
+	height: 32px;
+	margin-left:3px;
+	margin-bottom:2px;
+	
+	background: #EFFFFF;
+	-moz-box-shadow:inset 0px 1px 4px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 4px 0px #ffffff;
+	box-shadow:inset 0px 1px 4px 0px #ffffff;
+	
+	
+	-moz-border-radius:0 10px 0 10px;
+	-webkit-border-radius:0 10px 0 10px;
+	border-radius:0 10px 0 10px;
+	border:1px solid #dcdcdc;
+	
+	text-decoration:none;
+	text-shadow:1px 1px 4px #ffffff;
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li:nth-of-type(7n) {
+	position: relative;
+	float: right;
+	right: 3px;
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	
+		
+	-moz-box-shadow: 	0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+    -webkit-box-shadow: 0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+    box-shadow:         0 0 8px 1px #FFFF00, inset 0 0 5px #FFFF00;
+	
+	
+	
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li:active {
+	position: relative;
+	top: 1px;
+	left:1px;
+}
+
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li a{
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+}
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li:nth-of-type(7n+1) a{
+	color: red;
+}
+
+
+.formCalendar > div:nth-of-type(1) > ul:nth-of-type(2) li:empty {
+	visibility: hidden;
+	
+}
+
+
+
+
